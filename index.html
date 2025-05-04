@@ -1,1341 +1,1402 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/avatar/my-avatar3.png"
+              alt="Ayoub Djebli"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Ayoub Djebli">Ayoub Djebli</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar/my-avatar3.png" alt="Ayoub Djebli" width="80">
-        </figure>
+            <p class="titre">Développeur Junior</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Ayoub Djebli">Ayoub Djebli </h1>
+          <button class="info_plus-btn" data-sidebar-btn>
+            <span>Afficher Contact</span>
 
-          <p class="titre">Développeur Junior</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_plus-btn" data-sidebar-btn>
-          <span>Afficher Contact</span>
+        <div class="sidebar-info_plus">
+          <div class="separateur"></div>
 
-        <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-titre">Email</p>
 
-      <div class="sidebar-info_plus">
+                <a href="mailto:ayoub.djebli.69@gmail.com" class="contact-link"
+                  >ayoub.djebli.69@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separateur"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-titre">Téléphone</p>
 
-          <li class="contact-item">
+                <a href="tel:+33773678979" class="contact-link"
+                  >+33 7 73 67 89 79</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-titre">Email</p>
+              <div class="contact-info">
+                <p class="contact-titre">Anniverssaire</p>
 
-              <a href="mailto:ayoub.djebli.69@gmail.com" class="contact-link">ayoub.djebli.69@gmail.com</a>
-            </div>
+                <time datetime="2004-02-10">10 Février, 2004</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-titre">Localisation</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Lyon (69), France</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-titre">Téléphone</p>
+          <div class="separateur"></div>
 
-              <a href="tel:+33773678979" class="contact-link">+33 7 73 67 89 79</a>
-            </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
-          </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-          <li class="contact-item">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-titre">Anniverssaire</p>
-
-              <time datetime="2004-02-10">10 Février, 2004</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-titre">Localisation</p>
-
-              <address>Lyon (69), France</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separateur"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item" >
-            <button class="navbar-link active" data-nav-link>Moi</button>
-          </li>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Moi</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Parcours</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Parcours</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>CV</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>CV</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>T. S.</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>T. S.</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projet</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projet</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Veille Techno</button>
-          </li>
-        </ul>
-      </nav>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Veille Techno</button>
+            </li>
+          </ul>
+        </nav>
 
-
-
-
-
-      <!--
+        <!--
         - #MOI
       -->
 
-      <article class="about  active" data-page="moi">
+        <article class="about active" data-page="moi">
+          <header>
+            <h2 class="h2 article-titre">À propos de Moi</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-titre">À propos de Moi</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              Développeur avec un niveau Bac+2, j’ai acquis une expérience
+              polyvalente dans l’informatique, allant du support technique au
+              développement web et logiciel. J’ai mené des projets en autonomie
+              comme en équipe, en utilisant des technologies variées (PHP, C#,
+              React, etc.), tout en assurant la gestion d’incidents, le
+              déploiement de parcs informatiques, et la maintenance de matériel.
+            </p>
 
-        <section class="about-text">
-          <p>
+            <p>
+              En parallèle, j’ai développé des compétences créatives : création
+              de sites no-code, de flyers, logos, montages vidéo, et réparation
+              de téléphones. Ces expériences m’ont permis d’être réactif,
+              adaptable et orienté solution.
+            </p>
 
-            Développeur avec un niveau Bac +2, j'ai acquis une expérience polyvalente dans l'informatique et divers secteurs. Cela m'a permis
-            de développer un large éventail de compétences techniques et créatives, notamment en gestion des incidents, développement d’applications
-            et résolution de problèmes.
-          </p>
+            <p>
+              Aujourd’hui, je cherche à rejoindre une équipe dynamique en tant
+              que développeur, avec l’objectif de contribuer à des projets
+              innovants tout en continuant à monter en compétences.
+            </p>
+          </section>
 
-          <p>
-            Mon parcours m'a conduit à déployer des parcs informatiques, gérer des serveurs d'impression et réparer des équipements comme des PC
-            et des imprimantes. En parallèle, j'ai travaillé dans la vente, ce qui m'a permis de renforcer mes compétences en gestion des
-            relations clients et prise de décisions rapides. En dehors de l'informatique, je répare des téléphones, crée des sites web no-code,
-            des flyers et des logos, et monte des vidéos pour des influenceurs. Ces expériences m'ont rendu polyvalent et capable de travailler
-            sous pression, tout en adaptant mes solutions aux besoins spécifiques de chaque projet.
-          </p>
-
-          <p>
-            En ce qui concerne le développement, j'ai mené des projets en autonomie et en équipe, explorant des technologies variées comme le
-            développement web et le développement de logiciels en client lourd. J'ai travaillé avec plusieurs langages de programmation, ce qui
-            m'a permis de créer des applications fonctionnelles et intuitives. Passionné par mon métier, je reste motivé à apprendre de nouveaux
-            outils et à me tenir à jour avec les évolutions technologiques.
-          </p>
-
-          <p>
-            Aujourd'hui, je recherche une nouvelle opportunité en tant que développeur. Mon objectif est de contribuer à des projets ambitieux
-            tout en continuant à élargir mes compétences. Mon CV illustre la diversité de mes expériences et mon engagement à m'investir pleinement
-            dans chaque mission. Je suis enthousiaste à l'idée de rejoindre une équipe dynamique et de contribuer à des solutions innovantes et impactantes.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-titre">Mes Activités Professionnel</h3>
 
-          <h3 class="h3 service-titre">Mes Activités Professionnel</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/dqrpfjei.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Création De Sites Web</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    Création de site Web avec des designs originaux et créatifs.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/dqrpfjei.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/ffoywhrm.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Création De Sites Web</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Création D'application</h4>
 
-                <p class="service-item-text">
-                  Création de site Web avec des designs originaux et créatifs.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Développement de sites de haute qualité au niveau
+                    professionnel.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/raldojya.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Support Technique</h4>
 
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/ffoywhrm.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
+                  <p class="service-item-text">
+                    Support technique sur tout le site de Charles River Oncins
+                    (Réparation, Branchement, Brassage...)
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Création D'application</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/zxcukefq.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#fcff70,secondary:#ffdb70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-                <p class="service-item-text">
-                  Développement de sites de haute qualité au niveau professionnel.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Téléphonie</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    Réparation de téléphone à domicile et en livraison durant
+                    mon temps libre.
+                  </p>
+                </div>
+              </li>
 
-            <li class="service-item">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/rszslpey.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/raldojya.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px"
-                        >
-                </lord-icon>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Monteur Vidéo</h4>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Support Technique</h4>
+                  <p class="service-item-text">
+                    Création de montage vidéo pour des créateurs de contenu et
+                    influenceur.
+                  </p>
+                </div>
+              </li>
 
-                <p class="service-item-text">
-                  Support technique sur tout le site de Charles River Oncins (Réparation, Branchement, Brassage...)
-                </p>
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/wsaaegar.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-            </li>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Community Manager</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    Gestion des réseaux sociaux pour des entreprise.
+                  </p>
+                </div>
+              </li>
+            </ul>
 
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/zxcukefq.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#fcff70,secondary:#ffdb70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
+            <br />
+            <br />
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Téléphonie</h4>
+            <h3 class="h3 service-titre">Mes Activités Personnel</h3>
 
-                <p class="service-item-text">
-                  Réparation de téléphone à domicile et en livraison durant mon temps libre.
-                </p>
-              </div>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/abqetwoz.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-            </li>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Le Sport</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    J'aime le sport au sens générale j'aime pratiquer plusieurs
+                    sports comme la musulation, la box, le foot, le basket,la
+                    natation...
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/rszslpey.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/oqaajvyl.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Monteur Vidéo</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Dessin</h4>
 
-                <p class="service-item-text">
-                  Création de montage vidéo pour des créateurs de contenu et influenceur.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    J'aime dessiné durant mon temps libre, j'aime l'animation,
+                    mes dessins sont principalement des dessins de cartoon.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/wxwbdnuw.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#ffdb70,secondary:#fcff70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Bricolage</h4>
 
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/wsaaegar.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
+                  <p class="service-item-text">
+                    J'aime faire du bricolage démonté et remonté du materiel
+                    éléctronique et comprendre le circuit qui et caché à
+                    l'interieur.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Community Manager</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <lord-icon
+                    src="https://cdn.lordicon.com/mnzyszen.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#fcff70,secondary:#ffdb70"
+                    style="width: 60px; height: 60px"
+                  >
+                  </lord-icon>
+                </div>
 
-                <p class="service-item-text">
-                  Gestion des réseaux sociaux pour des entreprise.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-titre">Modélisation 3D</h4>
 
-            </li>
-          </ul>
+                  <p class="service-item-text">
+                    Durant mon temps libre je fait de la modélisation 3D sur
+                    blender, j'essaye de fusionner l'animation et ma créativité.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-          <br>
-          <br>
-
-          <h3 class="h3 service-titre">Mes Activités Personnel</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/abqetwoz.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Le Sport</h4>
-
-                <p class="service-item-text">
-                  J'aime le sport au sens générale j'aime pratiquer plusieurs sports comme la musulation, la box,
-                  le foot, le basket,la natation...
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/oqaajvyl.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Dessin</h4>
-
-                <p class="service-item-text">
-                  J'aime dessiné durant mon temps libre, j'aime l'animation, mes dessins sont principalement
-                  des dessins de cartoon.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/wxwbdnuw.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#ffdb70,secondary:#fcff70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Bricolage</h4>
-
-                <p class="service-item-text">
-                  J'aime faire du bricolage démonté et remonté du materiel éléctronique et comprendre le circuit
-                  qui et caché à l'interieur.
-                </p>
-              </div>
-
-            </li>
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <lord-icon
-                        src="https://cdn.lordicon.com/mnzyszen.json"
-                        trigger="hover"
-                        stroke="bold"
-                        colors="primary:#fcff70,secondary:#ffdb70"
-                        style="width:60px;height:60px">
-                </lord-icon>
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-titre">Modélisation 3D</h4>
-
-                <p class="service-item-text">
-                  Durant mon temps libre je fait de la modélisation 3D sur blender, j'essaye de fusionner
-                  l'animation et ma créativité.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - Témoignage
         -->
 
-        <section class="temoignage">
+          <section class="temoignage">
+            <h3 class="h3 temoignage-titre">Témoignage</h3>
 
-          <h3 class="h3 temoignage-titre">Témoignage</h3>
+            <ul class="temoignage-list has-scrollbar">
+              <li class="temoignage-item">
+                <div class="content-card" data-temoignage-item>
+                  <figure class="temoignage-avatar-box">
+                    <img
+                      src="./assets/images/avatar/avatar-10.png"
+                      alt="Olivier Perroudon"
+                      width="80"
+                      data-temoignage-avatar
+                    />
+                  </figure>
 
-          <ul class="temoignage-list has-scrollbar">
+                  <h4 class="h4 temoignage-item-titre" data-temoignage-titre>
+                    Olivier Perroudon
+                  </h4>
+                  <div class="info-content">
+                    <p class="titre">Responsable IT de proximité au HCL</p>
+                  </div>
+                  <br />
 
-            <li class="temoignage-item">
-              <div class="content-card" data-temoignage-item>
-
-                <figure class="temoignage-avatar-box">
-                  <img src="./assets/images/avatar/avatar-7.png" alt="Henry william" width="60" data-temoignage-avatar>
-                </figure>
-
-                <h4 class="h4 temoignage-item-titre" data-temoignage-titre>Anthony Malfondet</h4>
-                <div class="info-content">
-                  <p class="titre">
-                    Manageur de l'équipe IT
-
-                    Chez Charles River
-                  </p>
+                  <div class="temoignage-text" data-temoignage-text>
+                    <p>
+                      Ayoub s’est rapidement imposé comme un élément clé de
+                      l’équipe. Fiable, curieux et toujours volontaire, il
+                      aborde chaque mission avec sérieux et efficacité. Son
+                      autonomie, son sens du service et sa capacité à s’adapter
+                      aux imprévus font de lui un collaborateur précieux. Son
+                      esprit d’équipe et sa bonne humeur constante contribuent à
+                      créer un environnement de travail agréable. Travailler
+                      avec Ayoub, c’est avoir la garantie d’un travail bien
+                      fait, dans une dynamique toujours positive.
+                    </p>
+                  </div>
                 </div>
-                <br>
+              </li>
 
-                <div class="temoignage-text" data-temoignage-text>
-                  <p>
-                    Toujours souriant, positif et partant sur les sujets que je lui confie.
-                    Sérénité, autonomie, professionnel, engagé sont des mots forts qui résument parfaitement l’attitude d’Ayoub en entreprise.
-                    Travailler avec Ayoub est un réel plaisir !
-                  </p>
+              <li class="temoignage-item">
+                <div class="content-card" data-temoignage-item>
+                  <figure class="temoignage-avatar-box">
+                    <img
+                      src="./assets/images/avatar/avatar-7.png"
+                      alt="Henry william"
+                      width="60"
+                      data-temoignage-avatar
+                    />
+                  </figure>
+
+                  <h4 class="h4 temoignage-item-titre" data-temoignage-titre>
+                    Anthony Malfondet
+                  </h4>
+                  <div class="info-content">
+                    <p class="titre">
+                      Manageur de l'équipe IT Chez Charles River
+                    </p>
+                  </div>
+                  <br />
+
+                  <div class="temoignage-text" data-temoignage-text>
+                    <p>
+                      Toujours souriant, positif et partant sur les sujets que
+                      je lui confie. Sérénité, autonomie, professionnel, engagé
+                      sont des mots forts qui résument parfaitement l’attitude
+                      d’Ayoub en entreprise. Travailler avec Ayoub est un réel
+                      plaisir !
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="temoignage-item">
-              <div class="content-card" data-temoignage-item>
+              <li class="temoignage-item">
+                <div class="content-card" data-temoignage-item>
+                  <figure class="temoignage-avatar-box">
+                    <img
+                      src="./assets/images/avatar/avatar-5.png"
+                      alt="Mounir Bendahmane"
+                      width="60"
+                      data-temoignage-avatar
+                    />
+                  </figure>
 
-                <figure class="temoignage-avatar-box">
-                  <img src="./assets/images/avatar/avatar-5.png" alt="Mounir Bendahmane" width="60" data-temoignage-avatar>
-                </figure>
+                  <h4 class="h4 temoignage-item-titre" data-temoignage-titre>
+                    Mounir Bendahmane
+                  </h4>
+                  <div class="info-content">
+                    <p class="titre">Professeur de Dev</p>
+                  </div>
+                  <br />
 
-
-                <h4 class="h4 temoignage-item-titre" data-temoignage-titre>Mounir Bendahmane</h4>
-                <div class="info-content">
-                  <p class="titre">Professeur de Dev</p>
+                  <div class="temoignage-text" data-temoignage-text>
+                    <p>
+                      Ayoub est un étudiant très dynamique et toujours très
+                      motivé, il est conscient des progrès qu'il lui reste à
+                      faire mais ne se décourage pas !
+                    </p>
+                  </div>
                 </div>
-                <br>
+              </li>
 
-                <div class="temoignage-text" data-temoignage-text>
-                  <p>
-                    Ayoub est un étudiant très dynamique et toujours très motivé, il est conscient des progrès
-                    qu'il lui reste à faire mais ne se décourage pas !
-                  </p>
+              <li class="temoignage-item">
+                <div class="content-card" data-temoignage-item>
+                  <figure class="temoignage-avatar-box">
+                    <img
+                      src="./assets/images/avatar/avatar-6.png"
+                      alt="Stéphane Henry"
+                      width="60"
+                      data-temoignage-avatar
+                    />
+                  </figure>
 
+                  <h4 class="h4 temoignage-item-titre" data-temoignage-titre>
+                    Stéphane Henry
+                  </h4>
+                  <div class="info-content">
+                    <p class="titre">Professeur de Réseaux</p>
+                  </div>
+                  <br />
+
+                  <div class="temoignage-text" data-temoignage-text>
+                    <p>
+                      J'ai eu le plaisir de suivre Ayoub pendant deux années
+                      dans le cadre de son BTS SIO en tant que formateur sur la
+                      partie "Gestion de projet" et "Technique des systèmes" .
+                      Durant cette période, j'ai pu observer son évolution et
+                      ses accomplissements remarquables dans ses projets tout au
+                      long des 2 ans. Il est toujours resté professionnel dans
+                      son travail. Lui souhaitant une bonne continuation dans
+                      ses projets futurs.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
+              <li class="temoignage-item">
+                <div class="content-card" data-temoignage-item>
+                  <figure class="temoignage-avatar-box">
+                    <img
+                      src="./assets/images/avatar/avatar-8.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-temoignage-avatar
+                    />
+                  </figure>
 
-              </div>
-            </li>
+                  <h4 class="h4 temoignage-item-titre" data-temoignage-titre>
+                    Marine Mermet-Bouvier
+                  </h4>
+                  <div class="info-content">
+                    <p class="titre">Pédagogue à ISITECH</p>
+                  </div>
+                  <br />
 
-            <li class="temoignage-item">
-              <div class="content-card" data-temoignage-item>
-
-                <figure class="temoignage-avatar-box">
-                  <img src="./assets/images/avatar/avatar-6.png" alt="Stéphane Henry" width="60" data-temoignage-avatar>
-                </figure>
-
-                <h4 class="h4 temoignage-item-titre" data-temoignage-titre>Stéphane Henry</h4>
-                <div class="info-content">
-                  <p class="titre">Professeur de Réseaux</p>
+                  <div class="temoignage-text" data-temoignage-text>
+                    <p>
+                      Ayoub est un alternant sympathique, qui a toujours le
+                      sourire et qui transmet sa bonne humeur. Il a prouvé sa
+                      capacité à fournir un travail sérieux montrant une réelle
+                      progression dans sa manière d’aborder les tâches et de
+                      s’investir dans son apprentissage. Ayoub à toutes les
+                      chances de continuer à progresser et à améliorer ses
+                      performances mais il faut qu’il prenne confiance en lui.
+                    </p>
+                  </div>
                 </div>
-                <br>
+              </li>
+            </ul>
+          </section>
 
-                <div class="temoignage-text" data-temoignage-text>
-                  <p>
-                    J'ai eu le plaisir de suivre Ayoub pendant deux années dans le cadre de son BTS SIO en tant que formateur
-                    sur la partie "Gestion de projet" et "Technique des systèmes" . Durant cette période, j'ai pu observer son
-                    évolution et ses accomplissements remarquables dans ses projets tout au long des 2 ans. Il est toujours
-                    resté professionnel dans son travail. Lui souhaitant une bonne continuation dans ses projets futurs.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="temoignage-item">
-              <div class="content-card" data-temoignage-item>
-
-                <figure class="temoignage-avatar-box">
-                  <img src="./assets/images/avatar/avatar-8.png" alt="Emily evans" width="60" data-temoignage-avatar>
-                </figure>
-
-                <h4 class="h4 temoignage-item-titre" data-temoignage-titre>Marine Mermet-Bouvier</h4>
-                <div class="info-content">
-                  <p class="titre">Pédagogue à ISITECH</p>
-                </div>
-                <br>
-
-                <div class="temoignage-text" data-temoignage-text>
-                  <p>
-                    Ayoub est un alternant sympathique, qui a toujours le sourire et qui transmet sa bonne humeur.
-                    Il a prouvé sa capacité à fournir un travail sérieux montrant une réelle progression dans sa
-                    manière d’aborder les tâches et de s’investir dans son apprentissage. Ayoub à toutes
-                    les chances de continuer à progresser et à améliorer ses performances mais il faut
-                    qu’il prenne confiance en lui.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - temoignage modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="temoignage-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="temoignage-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-titre" data-modal-titre>Daniel lewis</h4>
-
-              <time datetime="2024-05-07"> Mai, 2024</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-titre" data-modal-titre>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2024-05-07"> Mai, 2024</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           COMPETENCES
         -->
 
-        <section class="skill">
+          <section class="skill">
+            <h2 class="h3 skills-titre">Mes Compétences</h2>
 
-          <h2 class="h3 skills-titre">Mes Compétences</h2>
+            <ul class="skills-list content-card">
+              <h4 class="h4 skills-titre">Développement</h4>
 
-          <ul class="skills-list content-card">
-
-            <h4 class="h4 skills-titre">Développement</h4>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/html-logo.svg" alt=""style="width:30px;height:30px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/html-logo.svg"
+                      alt=""
+                      style="width: 30px; height: 30px"
+                    ></ion-icon>
+                  </div>
+                  <br />
+                  <h5 class="h5">HTML 5</h5>
+                  <data value="80">80%</data>
                 </div>
-                <BR>
-                <h5 class="h5">HTML 5</h5>
-                <data value="80">80%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/css-logo.svg" alt=""style="width:30px;height:30px"></ion-icon>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
                 </div>
-                <h5 class="h5">CSS 3</h5>
-                <data value="70">70%</data>
-              </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/react-logo.svg" alt=""style="width:30px;height:30px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/css-logo.svg"
+                      alt=""
+                      style="width: 30px; height: 30px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">CSS 3</h5>
+                  <data value="70">70%</data>
                 </div>
-                <h5 class="h5">React</h5>
-                <data value="70">50%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/javascript-logo.svg" alt=""style="width:25px;height:25px"></ion-icon>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
                 </div>
-                <h5 class="h5">JavaScript</h5>
-                <data value="90">35%</data>
-              </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 35%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/typescript-logo.svg" alt=""style="width:25px;height:25px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/react-logo.svg"
+                      alt=""
+                      style="width: 30px; height: 30px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">React</h5>
+                  <data value="50">50%</data>
                 </div>
-                <h5 class="h5">TypeScript</h5>
-                <data value="50">30%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/c-logo.svg" alt="logo C#" style="width:28px;height:28px"></ion-icon>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
                 </div>
-                <h5 class="h5">C#</h5>
-                <data value="70">25%</data>
-              </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 25%;"></div>
-              </div>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/javascript-logo.svg"
+                      alt=""
+                      style="width: 25px; height: 25px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="90">35%</data>
+                </div>
 
-            </li>
-            <br/>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 35%"></div>
+                </div>
+              </li>
 
-            <!--
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/typescript-logo.svg"
+                      alt=""
+                      style="width: 25px; height: 25px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">TypeScript</h5>
+                  <data value="50">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/c-logo.svg"
+                      alt="logo C#"
+                      style="width: 28px; height: 28px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">C#</h5>
+                  <data value="70">25%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 25%"></div>
+                </div>
+              </li>
+              <br />
+
+              <!--
              Base De Données
             -->
 
-            <h4 class="h4 skills-titre">Base De Données</h4>
+              <h4 class="h4 skills-titre">Base De Données</h4>
 
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/mysql-logo.svg" alt=""style="width:35px;height:35px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/mysql-logo.svg"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">MySQL</h5>
+                  <data value="70">35%</data>
                 </div>
-                <h5 class="h5">MySQL</h5>
-                <data value="70">35%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 35%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/mongodb-logo.svg" alt=""style="width:35px;height:35px"></ion-icon>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 35%"></div>
                 </div>
-                <h5 class="h5">MongoDB</h5>
-                <data value="70">20%</data>
-              </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
-              </div>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/mongodb-logo.svg"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">MongoDB</h5>
+                  <data value="70">20%</data>
+                </div>
 
-            </li>
-            <br/>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%"></div>
+                </div>
+              </li>
+              <br />
 
-            <!--
+              <!--
               Montage Photo/Vidéo
             -->
 
-            <h4 class="h4 skills-titre">Montage Photo/Vidéo</h4>
+              <h4 class="h4 skills-titre">Montage Photo/Vidéo</h4>
 
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/capcut-logo.svg" alt=""style="width:25px;height:25px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/capcut-logo.svg"
+                      alt=""
+                      style="width: 25px; height: 25px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">CapCut</h5>
+                  <data value="90">90%</data>
                 </div>
-                <h5 class="h5">CapCut</h5>
-                <data value="90">90%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/pshop-logo.svg" alt=""style="width:25px;height:25px"></ion-icon>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
                 </div>
-                <h5 class="h5">PhotoShop</h5>
-                <data value="90">50%</data>
-              </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/aftereffects-logo.svg" alt=""style="width:25px;height:25px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/pshop-logo.svg"
+                      alt=""
+                      style="width: 25px; height: 25px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">PhotoShop</h5>
+                  <data value="90">50%</data>
                 </div>
-                <h5 class="h5">After Effects</h5>
-                <data value="90">25%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 25%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
 
-            </li>
-            <br/>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/aftereffects-logo.svg"
+                      alt=""
+                      style="width: 25px; height: 25px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">After Effects</h5>
+                  <data value="90">25%</data>
+                </div>
 
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 25%"></div>
+                </div>
+              </li>
+              <br />
 
-            <!--
+              <!--
             Modélisation 3D
            -->
 
-            <h4 class="h4 skills-titre">Modélisation 3D</h4>
+              <h4 class="h4 skills-titre">Modélisation 3D</h4>
 
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/blender-logo.svg" alt=""style="width:25px;height:25px"></ion-icon>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/blender-logo.svg"
+                      alt=""
+                      style="width: 25px; height: 25px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">Blender</h5>
+                  <data value="90">55%</data>
                 </div>
-                <h5 class="h5">Blender</h5>
-                <data value="90">55%</data>
-              </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="titre-wrapper">
-                <div class="icon-box">
-                  <ion-icon src="./assets/images/logo/solidworks-logo.svg" alt=""style="width:35px;height:35px"></ion-icon>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 55%"></div>
                 </div>
-                <h5 class="h5">SolidWorks</h5>
-                <data value="70">20%</data>
-              </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
-              </div>
+              <li class="skills-item">
+                <div class="titre-wrapper">
+                  <div class="icon-box">
+                    <ion-icon
+                      src="./assets/images/logo/solidworks-logo.svg"
+                      alt=""
+                      style="width: 35px; height: 35px"
+                    ></ion-icon>
+                  </div>
+                  <h5 class="h5">SolidWorks</h5>
+                  <data value="70">20%</data>
+                </div>
 
-            </li>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PARCOURS
       -->
 
-      <article class="resume" data-page="parcours">
+        <article class="resume" data-page="parcours">
+          <header>
+            <h2 class="h2 article-titre">Parcours</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-titre">Parcours</h2>
-        </header>
+          <section class="timeline">
+            <div class="titre-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="titre-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Scolaires</h3>
             </div>
 
-            <h3 class="h3">Scolaires</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">
+                  BTS SIO - Services Informatiques aux Organisations (Option
+                  SLAM)
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2024 - 2025</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">Candidat libre</p>
+              </li>
 
-              <h4 class="h4 timeline-item-titre">BTS SIO - Services Informatiques aux Organisations (Option SLAM)</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">
+                  BTS SIO - Services Informatiques aux Organisations (Option
+                  SLAM)
+                </h4>
 
-              <span>2022 - 2024</span>
+                <span>2022 - 2024</span>
 
-              <p class="timeline-text">
-                École ISITECH, Lyon 7 ème 69007
-              </p>
+                <p class="timeline-text">École ISITECH, Lyon 7 ème 69007</p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">
+                  Baccalauréat Professionnel Système Numérique Option C -
+                  Réseaux Informatiques Et Systèmes Communicants
+                </h4>
 
-            <li class="timeline-item">
+                <span>2022</span>
 
-              <h4 class="h4 timeline-item-titre">Baccalauréat Professionnel Système Numérique Option C - Réseaux Informatiques Et Systèmes Communicants</h4>
+                <p class="timeline-text">
+                  Lycée Saint Charles, Rilleux-la-Pape 69140
+                </p>
+              </li>
 
-              <span>2022</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Brevet des collège</h4>
 
-              <p class="timeline-text">
-                Lycée Saint Charles, Rilleux-la-Pape 69140
-              </p>
+                <span>2019</span>
 
-            </li>
+                <p class="timeline-text">
+                  Collège Charles Sénard, Caluire-et-Cuire 69300
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            <li class="timeline-item">
+          <section class="timeline">
+            <div class="titre-wrapper">
+              <div class="icon-box">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
 
-              <h4 class="h4 timeline-item-titre">Brevet des collège</h4>
-
-              <span>2019</span>
-
-              <p class="timeline-text">
-                Collège Charles Sénard, Caluire-et-Cuire 69300
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-
-
-
-        <section class="timeline">
-
-          <div class="titre-wrapper">
-            <div class="icon-box">
-              <ion-icon name="analytics-outline"></ion-icon>
+              <h3 class="h3">Experiences</h3>
             </div>
 
-            <h3 class="h3">Experiences</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Technicien Support IT</h4>
 
-          <ol class="timeline-list">
+                <span>2025</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  CDD au HCL (Hospices Civils de Lyon), Hôpital Mère Enfant -
+                  Bron 69500
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-titre">Développeur Junior</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Développeur Junior</h4>
 
-              <span>2023 — 2024</span>
+                <span>2023 — 2024</span>
 
-              <p class="timeline-text">
-                Contrat d'alternance chez Charles River, Saint-Germain-Nuelle 69210
-              </p>
+                <p class="timeline-text">
+                  Contrat d'alternance chez Charles River, Saint-Germain-Nuelle
+                  69210
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Technicien Support IT</h4>
 
-            <li class="timeline-item">
+                <span>2022 — 2023</span>
 
-              <h4 class="h4 timeline-item-titre">Technicien Support IT</h4>
+                <p class="timeline-text">
+                  Contrat d'alternance chez Charles River, Saint-Germain-Nuelle
+                  69210
+                </p>
+              </li>
 
-              <span>2022 — 2023</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">
+                  Reconditionnement informatique
+                </h4>
 
-              <p class="timeline-text">
-                Contrat d'alternance chez Charles River, Saint-Germain-Nuelle 69210
-              </p>
+                <span>2020 - 2022</span>
 
-            </li>
+                <p class="timeline-text">
+                  Stage chez Espace Mobile, Lyon 7 ème 69007 - Job étudiant et
+                  Stage de 12 semaines
+                </p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Réparateur de téléphone</h4>
 
-              <h4 class="h4 timeline-item-titre">Reconditionnement informatique</h4>
+                <span>2019 - 2020</span>
 
-              <span>2020 - 2022</span>
+                <p class="timeline-text">
+                  Stage chez Rhône GSM, Lyon 7 ème 69007 - Job étudiant et Stage
+                  de 7 semaines
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                Stage chez Espace Mobile, Lyon 7 ème 69007 - Job étudiant et Stage de 12 semaines
-              </p>
-            </li>
+          <section class="timeline">
+            <div class="titre-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-titre">Réparateur de téléphone</h4>
-
-              <span>2019 - 2020</span>
-
-              <p class="timeline-text">
-                Stage chez Rhône GSM, Lyon 7 ème 69007 - Job étudiant et Stage de 7 semaines
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-
-
-        <section class="timeline">
-          <div class="titre-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
+              <h3 class="h3">Autres Experiences</h3>
             </div>
 
-            <h3 class="h3">Autres Experiences</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Community Manager</h4>
 
-          <ol class="timeline-list">
+                <span>2024 — Actuellement</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Contrat à temps partiel chez La Bonne Époque, Caluire-et-Cuire
+                  69300
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-titre">Community Manager</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Monteur Vidéo</h4>
 
-              <span>2024 — Actuellement</span>
+                <span>2024 — Actuellement</span>
 
-              <p class="timeline-text">
-                Contrat à temps partiel chez La Bonne Époque, Caluire-et-Cuire 69300
-              </p>
+                <p class="timeline-text">
+                  À Domicile pour plusieur client, Caluire-et-Cuire 69300
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Designeur Graphique</h4>
 
-            <li class="timeline-item">
+                <span>2023 - Actuellement</span>
 
-              <h4 class="h4 timeline-item-titre">Monteur Vidéo</h4>
+                <p class="timeline-text">
+                  Conception de logo, flyer, flitre snapchat et autres à
+                  domicile - Caluire-et-Cuire 69300
+                </p>
+              </li>
 
-              <span>2024 — Actuellement</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Réparateur de Téléphone</h4>
 
-              <p class="timeline-text">
-                À Domicile pour plusieur client, Caluire-et-Cuire 69300
-              </p>
+                <span>2020 - Actuellement</span>
 
-            </li>
+                <p class="timeline-text">
+                  Réparation de téléphone à domicile pour divers client -
+                  Caluire-et-Cuire 69300
+                </p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Vendeur Animateur</h4>
 
-              <h4 class="h4 timeline-item-titre">Designeur Graphique</h4>
+                <span>2024 - 2024</span>
 
-              <span>2023 - Actuellement</span>
+                <p class="timeline-text">
+                  Je tenais un stand de football à la fête foraine des maroniers
+                  durant 1 mois - Croix Rousse 69004
+                </p>
+              </li>
 
-              <p class="timeline-text">
-                Conception de logo, flyer, flitre snapchat et autres à domicile - Caluire-et-Cuire 69300
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-titre">Vendeur en Alimentation</h4>
 
-            <li class="timeline-item">
+                <span>2021 - 2022</span>
 
-              <h4 class="h4 timeline-item-titre">Réparateur de Téléphone</h4>
+                <p class="timeline-text">
+                  Vendeur de fruit et légume chez la boucherie de l'avenir -
+                  Lyon 7ème 69007
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
 
-              <span>2020 - Actuellement</span>
-
-              <p class="timeline-text">
-                Réparation de téléphone à domicile pour divers client - Caluire-et-Cuire 69300
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-titre">Vendeur Animateur</h4>
-
-              <span>2024 - 2024</span>
-
-              <p class="timeline-text">
-                Je tenais un stand de football à la fête foraine des maroniers durant 1 mois - Croix Rousse 69004
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-titre">Vendeur en Alimentation</h4>
-
-              <span>2021 - 2022</span>
-
-              <p class="timeline-text">
-                Vendeur de fruit et légume chez la boucherie de l'avenir - Lyon 7ème 69007
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-      </article>
-
-
-      <!--
+        <!--
         - #CV
       -->
 
-      <article class="portfolio" data-page="cv">
+        <article class="portfolio" data-page="cv">
+          <header>
+            <h2 class="h2 article-titre">Curriculum Vitae</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-titre">Curriculum Vitae</h2>
-        </header>
+          <section class="pdf-container">
+            <embed
+              src="./assets/pdf/cv.pdf"
+              class="responsive-pdf"
+              type="application/pdf"
+            />
+          </section>
+        </article>
 
-        <section class="pdf-container">
-          <embed src="./assets/pdf/cv.pdf"
-                 class="responsive-pdf" type="application/pdf"/>
-        </section>
-
-      </article>
-
-
-
-      <!--
+        <!--
         - #Tableau de Compétences
       -->
 
-      <article class="contact" data-page="t. s.">
+        <article class="contact" data-page="t. s.">
+          <header>
+            <h2 class="h2 article-titre">Tableau Synthèse</h2>
+          </header>
+          <div class="pdf-container">
+            <embed
+              src="./assets/pdf/tableau-de-competences.pdf"
+              class="responsive-pdf"
+              type="application/pdf"
+            />
+          </div>
+        </article>
 
-        <header>
-          <h2 class="h2 article-titre">Tableau Synthèse</h2>
-        </header>
-        <div class="pdf-container">
-          <embed src="./assets/pdf/tableau-de-competences.pdf"
-                 class="responsive-pdf" type="application/pdf"/>
-        </div>
-
-
-      </article>
-
-
-      <!--
+        <!--
         - #PROJET
       -->
 
-      <article class="blog" data-page="projet">
+        <article class="blog" data-page="projet">
+          <header>
+            <h2 class="h2 article-titre">Projet</h2>
+          </header>
+          <br class="filter-select" data-select />
 
-        <header>
-          <h2 class="h2 article-titre">Projet</h2>
-        </header>
-        <br class="filter-select" data-select>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="https://github.com/AyoubADB/Projet-Trajet-Work">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/trajet-work.png"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Projet</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item" >
-              <a href="https://github.com/AyoubADB/Projet-Trajet-Work">
+                      <time datetime="2022-02-23">Aout, 2023</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/trajet-work.png" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-titre">Trajet Work</h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Projet</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Aout, 2023</time>
+                    <p class="blog-text">
+                      Application Web développée en React pour le covoiturage au
+                      sein d'une entreprise, réalisée au cours de ma première
+                      année de BTS SIO, dans le cadre d'un contexte GSB.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-titre">Trajet Work</h3>
+              <li class="blog-post-item">
+                <a href="https://github.com/AyoubADB/PPE3">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/gsb-labs.png"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Projet</p>
 
-                    Application Web développée en React pour le covoiturage au sein d'une entreprise,
-                    réalisée au cours de ma première année de BTS SIO, dans le cadre d'un contexte GSB.
-                  </p>
+                      <span class="dot"></span>
 
-                </div>
+                      <time datetime="2022-02-23">Janvier, 2024</time>
+                    </div>
 
-              </a>
-            </li>
+                    <h3 class="h3 blog-item-titre">GSB Labs</h3>
 
-            <li class="blog-post-item">
-              <a href="https://github.com/AyoubADB/PPE3">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/gsb-labs.png" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Projet</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Janvier, 2024</time>
+                    <p class="blog-text">
+                      Une application client lourd développée en C# pour la
+                      gestion des ordonnances des patients à destination des
+                      médecins. Cette application a été réalisée au cours de ma
+                      deuxième année de BTS.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-titre">GSB Labs</h3>
+              <li class="blog-post-item">
+                <a href="https://github.com/AyoubADB/PPE4">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/stock-labs.png"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Une application client lourd développée en C# pour la gestion
-                    des ordonnances des patients à destination des médecins. Cette
-                    application a été réalisée au cours de ma deuxième année de BTS.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Projet</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">avril, 2024</time>
+                    </div>
 
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://github.com/AyoubADB/PPE4">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/stock-labs.png" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Projet</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">avril, 2024</time>
+                    <h3 class="h3 blog-item-titre">Stock Labs</h3>
+                    <p class="blog-text">
+                      Une application web, développée en PHP, HTML et CSS,
+                      destinée à la gestion des stocks d'un cabinet médical pour
+                      les médecins. Elle permet de gérer les médicaments, le
+                      matériel, ainsi que les utilisateurs. Cette application a
+                      été réalisée au cours de ma deuxième année de BTS.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-titre">Stock Labs</h3>
-                  <p class="blog-text">
-                    Une application web, développée en PHP, HTML et CSS, destinée à
-                    la gestion des stocks d'un cabinet médical pour les médecins. Elle permet
-                    de gérer les médicaments, le matériel, ainsi que les utilisateurs. Cette application
-                    a été réalisée au cours de ma deuxième année de BTS.
-                  </p>
-                </div>
-              </a>
-            </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/adb.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="blog-post-item">
-              <a href="#">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/adb.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
+                      <span class="dot"></span>
 
-                <div class="blog-content">
+                      <time datetime="2022-02-23">2022</time>
+                    </div>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <h3 class="h3 blog-item-titre">ADB Réparation</h3>
 
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">2022</time>
+                    <p class="blog-text">
+                      Logo des services que je vend durant mon temps libre,
+                      réparation de téléphone à domicile ou en livraison avec un
+                      véhicule adapté pour la réparation de téléphone. Le site
+                      est en cours de préparation...
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-titre">ADB Réparation</h3>
-
-                  <p class="blog-text">
-                    Logo des services que je vend durant mon temps libre, réparation de téléphone
-                    à domicile ou en livraison avec un véhicule adapté pour la réparation de téléphone.
-                    Le site est en cours de préparation...
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-        </section>
-      </article>
-
-
-      <!--
+        <!--
         - #VEILLE TECHNO
       -->
 
-      <article class="portfolio" data-page="veille techno">
+        <article class="portfolio" data-page="veille techno">
+          <header>
+            <h2 class="h2 article-titre">Veille Techno</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-titre">Veille Techno</h2>
-        </header>
-
-        <section class="projects">
-
-          <div class="canva-anim" style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFscvB3_14&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-            </iframe>
-          </div>
+          <section class="projects">
+            <div
+              class="canva-anim"
+              style="
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 56.25%;
+                padding-bottom: 0;
+                box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+                margin-top: 1.6em;
+                margin-bottom: 0.9em;
+                overflow: hidden;
+                border-radius: 8px;
+                will-change: transform;
+              "
+            >
+              <iframe
+                loading="lazy"
+                style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                "
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFscvB3_14&#x2F;view?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen"
+              >
+              </iframe>
+            </div>
 
             <div class="canva-div">
-              <a class="canva" href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFscvB3_14&#x2F;view?utm_content=DAFscvB3_14&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Veille technologique</a>
+              <a
+                class="canva"
+                href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFscvB3_14&#x2F;view?utm_content=DAFscvB3_14&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                target="_blank"
+                rel="noopener"
+                >Veille technologique</a
+              >
             </div>
-        </section>
+          </section>
+        </article>
+      </div>
+    </main>
 
-      </article>
-    </div>
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
